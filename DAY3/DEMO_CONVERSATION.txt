@@ -1,0 +1,61 @@
+=== Health & Wellness Voice Companion Demo Conversation ===
+
+This is a sample conversation for video demonstration purposes.
+
+---
+
+USER (via voice):
+"Hello, I'm feeling tired today."
+
+AGENT (responds with voice):
+"Hi there! I'm sorry to hear you're feeling tired. Let's explore this together. On a scale of 1 to 10, where would you rate your energy level right now? And can you tell me if this is physical tiredness or more mental fatigue?"
+
+---
+
+USER (via voice):
+"I'd say around a 4. It's mostly physical tiredness. I didn't sleep well last night."
+
+AGENT (responds with voice):
+"I understand - poor sleep can really drain your energy. Thank you for sharing that. Let's talk about your goals for today. What are one or two things you'd like to accomplish, even with low energy?"
+
+---
+
+USER (via voice):
+"I need to finish a work project and maybe do some light exercise."
+
+AGENT (responds with voice):
+"Those are great intentions! Given your energy level, here's my advice: Start with the work project when you have the most focus, probably in the next hour or two. For exercise, keep it gentle - maybe a 10-minute walk or some stretching. The fresh air could help boost your energy naturally. And tonight, try to get to bed 30 minutes earlier than usual. How does that sound?"
+
+---
+
+USER (via voice):
+"That sounds manageable. Thank you!"
+
+AGENT (responds with voice):
+"You're very welcome! Let me recap: You're feeling physically tired with an energy level around 4 out of 10, likely from poor sleep. Your goals today are completing your work project and doing light exercise. My advice is to tackle work first, keep exercise gentle like a short walk, and prioritize better sleep tonight. You've got this! Feel free to check in with me tomorrow to let me know how it went."
+
+---
+
+[End of check-in session - Data automatically saved to wellness_log.json]
+
+{
+  "timestamp": "2025-01-15T14:30:00Z",
+  "mood": "tired, physically exhausted",
+  "energy_level": "4/10",
+  "objectives": ["finish work project", "light exercise"],
+  "summary": "User experiencing physical tiredness from poor sleep. Recommended prioritizing work tasks, gentle exercise, and improving sleep schedule."
+}
+
+---
+
+=== Next Day Follow-up ===
+
+USER (via voice):
+"Hi, I'm back! Feeling a bit better today."
+
+AGENT (responds with voice):
+"Welcome back! I'm so glad to hear you're feeling better! Last time we talked, you mentioned you were quite tired with energy around 4 out of 10, and you wanted to finish a work project and do some light exercise. How did yesterday go? Were you able to get better sleep last night?"
+
+---
+
+[This demonstrates the conversation continuity and memory feature]
