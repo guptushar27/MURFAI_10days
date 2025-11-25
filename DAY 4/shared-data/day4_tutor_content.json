@@ -1,0 +1,32 @@
+[
+  {
+    "id": "variables",
+    "title": "Variables",
+    "summary": "Variables are like labeled containers that store data in your program. Think of them as boxes with name tags – you can put different types of values inside, like numbers, text, or even lists. Variables are useful because they let you reuse values throughout your code, make your programs more readable, and allow you to change data dynamically as your program runs.",
+    "sample_question": "What is a variable and why is it useful in programming?"
+  },
+  {
+    "id": "loops",
+    "title": "Loops",
+    "summary": "Loops are programming constructs that let you repeat a block of code multiple times. A 'for loop' is used when you know exactly how many times you want to repeat something – like counting from 1 to 10. A 'while loop' keeps running as long as a condition is true – like keeping a game running while the player has lives remaining. Loops save you from writing repetitive code and make programs more efficient.",
+    "sample_question": "Explain the difference between a for loop and a while loop."
+  },
+  {
+    "id": "functions",
+    "title": "Functions",
+    "summary": "Functions are reusable blocks of code that perform a specific task. They help you organize your code by breaking it into smaller, manageable pieces. Functions can accept inputs called parameters and can return outputs. By using functions, you follow the DRY principle – Don't Repeat Yourself – which makes your code cleaner, easier to test, and simpler to maintain.",
+    "sample_question": "What are functions and how do they help organize code?"
+  },
+  {
+    "id": "conditionals",
+    "title": "Conditionals",
+    "summary": "Conditionals are decision-making structures in programming. They use 'if', 'else if', and 'else' statements to execute different code blocks based on whether certain conditions are true or false. For example, you might check if a user is logged in before showing their profile. Conditionals make your programs smart and responsive to different situations.",
+    "sample_question": "How do conditionals help programs make decisions?"
+  },
+  {
+    "id": "arrays",
+    "title": "Arrays",
+    "summary": "Arrays are data structures that store multiple values in a single variable, organized by index positions starting from 0. They're like a numbered list where you can store items of the same type – such as a list of student names or test scores. Arrays allow you to efficiently manage collections of data and iterate through them using loops.",
+    "sample_question": "What is an array and when would you use one?"
+  }
+]
