@@ -1,0 +1,49 @@
+Day 8 – Voice Game Master (D&D-Style Adventure)
+Welcome to Day 8!
+Today you’ll turn your voice agent into a D&D-style Game Master that runs a story in a specific universe (maybe in the setting of your favorite TV show/ movie) and guides the player through an interactive adventure.
+
+You’ll start with a simple, single-player story that only relies on the conversation history, and then (if you want) level up into a stateful RPG engine powered by a JSON world model.
+
+Scenario
+You are building a voice-only game master:
+
+The system message for the LLM will define the universe, tone, and rules.
+For example: “You are a Game Master running a fantasy adventure in a world of dragons and magic,” or “You are running a sci-fi survival story on Mars,” etc.
+
+Primary Goal (Required)
+Build a D&D-style voice Game Master that runs a story in a single universe, using only chat history for context.
+
+Minimum Requirements
+Your agent should:
+
+Use a clear Game Master (GM) persona
+
+System prompt sets:
+Universe (fantasy / sci-fi / post-apocalypse / etc.)
+Tone (dramatic, humorous, spooky)
+Role: “You are the GM. You describe scenes and ask the player what they do.”
+Drive an interactive story using voice
+
+GM describes the current scene.
+GM ends each message with a prompt for player action (“What do you do?”).
+Player responds by speaking; the agent continues the story based on that.
+Maintain continuity with chat history
+
+The GM should remember:
+Player’s past decisions
+Named characters / locations
+Run a short “session”
+
+A single playthrough should:
+Last at least a few turns (e.g., 8–15 exchanges).
+Reach some kind of “mini-arc” (finding something, escaping danger, etc.).
+Basic UI
+
+Show the GM’s text messages.
+Show the player’s transcribed speech.
+Optional but nice: a “Restart story” button to start a fresh adventure.
+If you achieve this, you’ve completed the Day 8 primary goal
+
+Resources
+https://docs.livekit.io/agents/build/prompting/
+https://docs.livekit.io/agents/build/tools/
