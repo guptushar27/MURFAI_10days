@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ORD-75782AFB",
+    "items": [
+      {
+        "productId": "mug-001",
+        "productName": "Stoneware Coffee Mug",
+        "quantity": 1,
+        "price": 800,
+        "currency": "INR"
+      }
+    ],
+    "total": 800,
+    "currency": "INR",
+    "createdAt": "2025-11-30T14:26:40.288Z"
+  },
+  {
+    "id": "ORD-E79CD039",
+    "items": [
+      {
+        "productId": "mug-002",
+        "productName": "Premium Ceramic Mug",
+        "quantity": 1,
+        "price": 550,
+        "currency": "INR"
+      }
+    ],
+    "total": 550,
+    "currency": "INR",
+    "createdAt": "2025-11-30T14:30:27.702Z"
+  },
+  {
+    "id": "ORD-3EE2340E",
+    "items": [
+      {
+        "productId": "mug-001",
+        "productName": "Stoneware Coffee Mug",
+        "quantity": 1,
+        "price": 450,
+        "currency": "INR"
+      }
+    ],
+    "total": 450,
+    "currency": "INR",
+    "createdAt": "2025-11-30T20:15:57.795Z"
+  },
+  {
+    "id": "ORD-A1B2C3D4",
+    "items": [
+      {
+        "productId": "hoodie-001-m",
+        "productName": "Premium Cotton Hoodie",
+        "size": "M",
+        "color": "black",
+        "quantity": 1,
+        "price": 1999,
+        "currency": "INR"
+      }
+    ],
+    "total": 1999,
+    "currency": "INR",
+    "customerName": "Tushar",
+    "customerAddress": "123 Main Street, Jaipur",
+    "estimatedDelivery": "2025-12-04",
+    "createdAt": "2025-11-30T21:00:00.000Z"
+  }
+]

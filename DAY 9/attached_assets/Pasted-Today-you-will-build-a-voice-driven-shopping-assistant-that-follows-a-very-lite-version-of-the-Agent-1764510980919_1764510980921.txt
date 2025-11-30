@@ -1,0 +1,120 @@
+Today you will build a voice-driven shopping assistant that follows a very lite version of the Agentic Commerce Protocol (ACP).
+
+The idea is to simulate the key ACP pattern:
+
+The user describes what they want to buy.
+The AI agent interprets that intent.
+The agent calls a merchant-like API (your Python code) to:
+Browse a product catalog.
+Create an order.
+No real payments, authentication, or full spec are required for this day.
+
+ACP: Very Short Primer (Conceptual)
+The Agentic Commerce Protocol (ACP) is an open standard that defines how:
+
+Buyers and their AI agents express shopping intent,
+Merchants expose their products and create orders,
+Payment providers process the payment securely,
+using a structured, JSON-based interface and HTTP APIs.
+
+Key ideas you should borrow for this task:
+
+Keep a clear separation between:
+Conversation (LLM + voice),
+Commerce logic (functions/endpoints that manage catalog and orders).
+Use structured objects for:
+Product catalog items,
+Orders (what was bought, quantity, price, currency).
+You are not implementing the full ACP spec.
+You are just building a small, ACP-inspired flow in your own code.
+
+Primary Goal (Required)
+Build a voice shopping assistant with:
+
+A small product catalog.
+A simple, ACP-inspired “merchant layer” in Python.
+A voice flow that lets the user browse and place an order.
+Orders persisted on the backend (in memory or JSON file).
+Behaviour Requirements
+Your agent should:
+
+Let the user explore the catalog by voice
+
+Examples (not hard-coded phrases):
+
+“Show me all coffee mugs.”
+“Do you have any t-shirts under 1000?”
+“I’m looking for a black hoodie.”
+"Does this coffee mug come in blue?"
+The agent should:
+
+Call a Python function to get the catalog or filtered list.
+Summarize a few relevant products with name and price.
+Allow the user to place an order
+
+Example flow:
+
+User: “I’ll buy the second hoodie you mentioned, in size M.”
+Agent:
+Resolves which product this refers to.
+Calls a Python function to create an order object.
+Confirms the order details back to the user.
+Persist orders in a simple backend structure
+
+For the primary goal, it is enough to:
+
+Keep an in-memory list of orders per session, or
+Append to a orders.json file.
+Each order should at least include:
+
+A generated order ID.
+Product ID(s).
+Quantity.
+Price and currency.
+Timestamp.
+Provide a minimal way to view the last order
+
+Examples:
+
+User: “What did I just buy?”
+Agent reads back the most recent order summary from the backend.
+Data Model Requirements
+Keep the schema simple but structured. For example:
+
+Product:
+id, name, description, price, currency, category, optional attributes (color, size, etc.).
+Order:
+id, items (list of product IDs + quantities), total, currency, created_at.
+You can store the catalog in a static Python list or a JSON file.
+
+Minimal Python Scaffolding (Example)
+You are free to design your own shapes.
+The following is only a guiding example of how to organize things:
+
+# example_catalog.py (guidance only)
+PRODUCTS = [
+    {
+        "id": "mug-001",
+        "name": "Stoneware Coffee Mug",
+        "price": 800,
+        "currency": "INR",
+        "category": "mug",
+        "color": "white",
+    },
+    # Add a few more products...
+]
+
+ORDERS = []
+
+def list_products(filters: dict | None = None) -> list[dict]:
+    # Apply naive filtering by category, max_price, color, etc.
+    # Return a list of products.
+    ...
+
+def create_order(line_items: list[dict]) -> dict:
+    # line_items: [{ "product_id": "...", "quantity": 1 }, ...]
+    # Look up products, compute total, create an order dict,
+    # append to ORDERS, and return the order.
+    ...
+From your LLM tool-calling layer, you should be calling functions like list_products and create_order instead of handling catalog/order logic inside the prompt.
+
